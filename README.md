@@ -1,17 +1,22 @@
-# Projets
-Cassava-Disease-Clasification
-In this project, we design multiples models to classify cassava leaf disease
+🌾 Microsoft-Rice-Leaf-Disease-Classification
 
-As the 2nd largest provider of carbohydrates in Africa, cassava is a key food security crop grown by small-holder farmers because it can withstand harsh conditions. At least 80% of small-holder farmer households in Sub-Saharan Africa grow cassava and viral diseases are major sources of poor yields.
+In this project, we developed several deep learning models to classify rice leaf diseases using image-based diagnosis techniques.
 
-In this competition, we introduce a dataset of 5 fine-grained cassava leaf disease categories with 9,436 labeled images collected during a regular survey in Uganda, mostly crowdsourced from farmers taking images of their gardens, and annotated by experts at the National Crops Resources Research Institute (NaCRRI) in collaboration with the AI lab in Makarere University, Kampala.
+Rice is a staple food for more than half of the world’s population, and timely identification of diseases in rice plants is crucial to ensure food security, especially in regions heavily dependent on rice farming. Leaf diseases significantly affect yield and quality, making early and accurate detection a priority for farmers and researchers.
 
-The dataset consists of leaf images of the cassava plant, with 9,436 annotated images and 12,595 unlabeled images of cassava leaves. Participants can choose to use the unlabeled images as additional training data. The goal is to learn a model to classify a given image into these 4 disease categories or a 5th category indicating a healthy leaf, using the images in the training data (participants can choose to use the unlabeled images in their training data). This competition is part of the fine-grained visual-categorization workshop (FGVC6 workshop) at CVPR 2019.
+This challenge provided a curated dataset containing high-quality annotated images of rice leaves across three categories:
 
-We started with a simple CNN model, before moving to pretrained models including: ResNet50, ResNet101, ResNeXt101, ViT, EfficientNet to name a few and also use Test time augmentation technique to improve our model.
+Blast leaf
 
-We obtained an accuracy of 91.34% on the private leaderboard and occupied the 2nd position.
+Brown leaf
 
-The project was done in collaboration with Binta Sow
+Healthy leaf
 
-This link brings you to the Hackathon website on kaggle.
+The dataset included over 5,000 labeled images collected from experimental farms and agricultural research centers. The objective was to build a robust image classification model that could distinguish between these diseases and healthy rice leaves, enabling scalable, field-ready disease monitoring solutions.
+
+We began with a baseline convolutional neural network (CNN) model and later fine-tuned state-of-the-art pretrained architectures including EfficientNet, ResNet50, DenseNet121, and Vision Transformers (ViT). We also applied data augmentation and test-time augmentation (TTA) to enhance the model's generalization capabilities.
+
+The best-performing of our model achieved an accuracy of 90.75%.
+
+You can find more details about the challenge on the official Microsoft Rice Leaf Disease Dataset page on Kaggle.
+
